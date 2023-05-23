@@ -1,0 +1,26 @@
+package tableau;
+
+public class tableau {
+	public static void main(String[] args) {
+		public class ColorsArray {
+			  public static void main(String[] args) {
+			    // TODO- Déclarez une variable nommée colors qui correspond à un tableau de
+			    // String de longueur 5
+			    String [] colors = new String[5];
+			    colors[0] = "blue";
+			    colors[1] = "yellow";
+			    colors[2] = "red";
+			    colors[3] = "green";
+			    colors[4] = "black";
+			    // TODO- Remplissez le tableau avec les couleurs demandées
+
+			    // TODO- Remplacez 'green' par 'emerald' dans le tableau
+
+			    // Affiche le contenu du tableau
+			    for (String color : colors) {
+			      System.out.println(color);
+			    }
+			  }
+			}
+	}
+}

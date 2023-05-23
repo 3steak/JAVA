@@ -1,0 +1,16 @@
+package hello;
+
+public class OC {
+	public static void main (String [] args) {
+		Voiture vauxhall = new Voiture();
+		
+		
+	}
+}
+
+class Voiture {
+	
+	void start() {
+	System.out.println("VROOOMMMMMVROOOMM");
+	}
+}

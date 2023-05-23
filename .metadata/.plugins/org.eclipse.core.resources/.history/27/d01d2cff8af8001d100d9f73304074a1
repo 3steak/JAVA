@@ -1,0 +1,14 @@
+package tableau;
+
+public class tableau {
+	public static void main(String[] args) {
+		tableau = new String[] {"oui", "non"};
+		
+		
+
+		
+		for (int i = 0; i < tableau.length; i++) {
+			System.out.println(tableau[i]);
+		}
+	}
+}

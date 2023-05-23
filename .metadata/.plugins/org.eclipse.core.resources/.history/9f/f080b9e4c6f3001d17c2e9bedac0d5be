@@ -1,0 +1,19 @@
+package hello;
+
+public class OC {
+	public static void main (String [] args) {
+		Voiture vauxhall = new Voiture();
+		vauxhall.start();
+		
+	}
+}
+class Vehicule {
+	void start() {
+		System.out.println("VROOOMMMMM");
+		}
+}
+class Voiture {
+	
+}
+
+class Bateau extends Vehicule {}

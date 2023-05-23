@@ -1,0 +1,20 @@
+package tableau;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class tableau {
+	public static void main(String[] args) {
+	List<Integer> myList = new ArrayList<Integer>();
+			    colors[0] = "blue";
+			    colors[1] = "yellow";
+			    colors[2] = "red";
+			    colors[3] = "green";
+			    colors[4] = "black";
+			 
+			    for (String color : colors) {
+			      System.out.println(color);
+			    }
+			  }
+			}
+	

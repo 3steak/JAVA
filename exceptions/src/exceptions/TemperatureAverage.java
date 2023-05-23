@@ -1,0 +1,45 @@
+package exceptions;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class TemperatureAverage {
+
+	/**
+	 * affiche la température moyenne à partir des valeurs fournies comme arguments
+	 * en ligne de commande
+	 *
+	 * @param args liste de températures séparées par des espaces
+	 */
+	public static void main(String[] args) {
+try {
+	List<Integer> recordedTemperaturesInDegreesCelcius = new ArrayList<Integer>();
+
+	// remplissez la liste à partir des valeurs fournies comme arguments en ligne de
+	// commande
+
+	List<String> cPasDesArgs = new ArrayList<String>();
+	cPasDesArgs.add("1");
+	cPasDesArgs.add("2");
+
+	for (String stringRepresentationOfTemperature : cPasDesArgs) {
+		int temperature = Integer.parseInt(stringRepresentationOfTemperature);
+		recordedTemperaturesInDegreesCelcius.add(temperature);
+	}
+	// Protection contre la liste vide
+	
+		// calculez et affichez la température moyenne
+		Integer averageTemperature = SimpleMaths.calculateAverage(recordedTemperaturesInDegreesCelcius);
+		System.out.println("The average temperature is " + averageTemperature);
+	
+} catch (NumberFormatException e) {
+    System.out.println("All arguments should be provided as numbers");
+    System.exit(-1);
+ } catch (ArithmeticException e) {
+    System.out.println("At least one temperature should be provided");
+    System.exit(-1);
+ }
+
+	}
+
+}

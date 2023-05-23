@@ -1,0 +1,14 @@
+package hello;
+
+public class OC {
+	public static void main (String [] args) {
+		
+	}
+}
+
+class Voiture {
+	
+	void start() {
+	System.out.println("VROOOMMMMMVROOOMM");
+	}
+}

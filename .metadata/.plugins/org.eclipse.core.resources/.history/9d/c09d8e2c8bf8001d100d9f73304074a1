@@ -1,0 +1,11 @@
+package tableau;
+
+public class tableau {
+	public static void main(String[] args) {
+		cupsOfCoffeePerDayOfTheWeek=new int[]{6,2,3,7,3,4,1};
+		
+
+		
+		
+	}
+}

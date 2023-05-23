@@ -1,0 +1,33 @@
+package hello;
+
+public class Objects {
+
+	public static void main(String[] args) {
+	Brand apple = new Brand("apple");
+	Telephone benny = new Telephone(3400, "benny", apple);
+	
+	System.out.println(benny.name);
+	}
+}
+	class Telephone { 
+		int pixels;
+		String name;
+		Brand brand;
+		
+		//constructor
+		public Telephone (int pixels, String name, Brand brand) {
+			this.pixels = pixels;
+			this.name = name;
+			this.brand = brand;
+		}
+	}
+	
+	
+	class Brand {
+		String name;
+	
+		public Brand(String name) {
+			this.name = name;
+		}
+	}
+
