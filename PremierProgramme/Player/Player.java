@@ -31,21 +31,22 @@ public class Player {
         return name;
     }
 
-    public void setHealth(int health) {
-        this.health = health;
+    // methode qui soustrait l'attaque à la vie
+    public void looseHealth(int damage) {
+        this.health = Math.max(0, this.health - damage);
     }
 
     public void setName(String name) {
         this.name = name;
     }
 
+    // methode attack qui vient enlever de la vie à cible
     public void attack(Player cible) {
 
-        cible.health = cible.health - this.attackValue;
+        cible.looseHealth(attackValue);
 
         // cible.health = (cible.health < 0) ? cible.health = 0 : cible.health;
         // math.max return la valeur la plus haute, si health <0 il retournera 0
-        cible.health = Math.max(0, cible.health);
         System.out.println(
                 this.name + " attaque à " + this.attackValue + ", il ne reste que " + cible.health + " de vie à "
                         + cible.name);
