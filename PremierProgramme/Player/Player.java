@@ -1,9 +1,9 @@
 import java.util.*;
 
 public class Player {
-    public String name;
-    public int attackValue;
-    public int health;
+    private String name;
+    private int attackValue;
+    private int health;
 
     Random random = new Random();
 
@@ -17,6 +17,26 @@ public class Player {
     public String toString() {
         // TODO Auto-generated method stub
         return "Je suis le joueur " + name + " et j'ai " + attackValue + " d'attaque et " + health + " de vie.";
+    }
+
+    public int getAttackValue() {
+        return attackValue;
+    }
+
+    public int getHealth() {
+        return health;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setHealth(int health) {
+        this.health = health;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public void attack(Player cible) {
