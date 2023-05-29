@@ -1,11 +1,15 @@
+import java.util.*;
+
 public class Player {
     public String name;
     public int attackValue;
     public int health;
 
-    public Player(String name, int attackValue, int health) {
+    Random random = new Random();
+
+    public Player(String name, int health) {
         this.name = name;
-        this.attackValue = attackValue;
+        this.attackValue = random.nextInt(50);
         this.health = health;
     }
 
@@ -16,7 +20,12 @@ public class Player {
     }
 
     public void attack(Player cible) {
+
         cible.health = cible.health - this.attackValue;
+
+        // cible.health = (cible.health < 0) ? cible.health = 0 : cible.health;
+        // math.max return la valeur la plus haute, si health <0 il retournera 0
+        cible.health = Math.max(0, cible.health);
         System.out.println(
                 this.name + " attaque à " + this.attackValue + ", il ne reste que " + cible.health + " de vie à "
                         + cible.name);
