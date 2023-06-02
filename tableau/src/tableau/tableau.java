@@ -1,26 +1,31 @@
-package tableau;
+package Tableau;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.ListIterator;
 
-public class tableau {
+public class Tableau {
 
 	// creation méthode pour print les tableaux
-	public static void printTab(int[] tab) {
+	// public static void printTab(int[] tab) {
 
-		// boucler un tableau
-		for (int number : tab)
-			System.out.println(number);
-	}
+	// // boucler un tableau
+	// for (int number : tab)
+	// System.out.println(number);
+	// }
 
 	public static void main(String[] args) {
-		List<String> myList = new ArrayList<String>();
-		myList.add("Virgile");
-		myList.add("Oui");
+		List<Student> students = new ArrayList<Student>();
 
-		System.out.println(myList);
+		Student sakai = new Student("Sakai", 29);
+		Student alex = new Student("Alex", 20);
 
-		int[] tab = { 1, 2, 3 };
-		printTab(tab);
+		students.add(sakai);
+		students.add(alex);
+
+		ListIterator<Student> list = students.listIterator();
+
+		while (list.hasNext())
+			System.out.println(list.next().sayHello());
 	}
 }
