@@ -1,0 +1,9 @@
+{
+    "java.project.sourcePaths": [
+        "src"
+    ],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "D://Code/JAVA/FormationVideo/JAVA/BDD/BDD/lib/sqlite-jdbc-3.40.0.0.jar"
+    ]
+}

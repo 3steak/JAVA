@@ -1,5 +1,5 @@
 {
-    "java.project.sourcePaths": [
-        "strings"
+    "java.project.referencedLibraries": [
+        "D://Code/JAVA/FormationVideo/JAVA/BDD/sqlite-jdbc-3.40.0.0.jar"
     ]
 }
