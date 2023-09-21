@@ -1,0 +1,20 @@
+Orienté Connexion vs. Non Orienté Connexion :
+
+TCP : Il s'agit d'un protocole orienté connexion, ce qui signifie qu'il établit une connexion fiable et ordonnée entre l'émetteur et le récepteur avant le début du transfert de données. TCP garantit que les données sont livrées dans le bon ordre et offre une détection et une correction des erreurs. Il est couramment utilisé pour des applications qui nécessitent une livraison garantie des données, telles que la navigation web, la messagerie électronique et le transfert de fichiers.
+UDP : Il s'agit d'un protocole non orienté connexion, ce qui signifie qu'il n'établit pas de connexion avant l'envoi de données. UDP est plus rapide et plus léger que TCP car il ne comporte pas la surcharge de la configuration de la connexion et des mécanismes de vérification des erreurs. Cependant, il ne garantit pas la fiabilité, l'ordonnancement ou la récupération des erreurs. UDP est couramment utilisé pour des applications en temps réel telles que la diffusion vidéo, les jeux en ligne et la voix sur IP (VoIP) où une perte occasionnelle de données est acceptable.
+Fiabilité :
+
+TCP : TCP assure une livraison fiable des données grâce à des mécanismes tels que les accusés de réception, les retransmissions et le contrôle de flux. Il garantit que les données envoyées d'une extrémité seront reçues correctement par l'autre extrémité.
+UDP : UDP ne garantit pas la fiabilité. Il envoie des données sans aucune assurance qu'elles seront reçues ou dans le bon ordre. C'est à l'application utilisant UDP de gérer toute vérification des erreurs nécessaire et les retransmissions si nécessaire.
+Structure des Paquets :
+
+TCP : Les paquets TCP sont structurés avec des informations d'en-tête qui comprennent les numéros de port source et de destination, les numéros de séquence, les numéros d'accusé de réception et des indicateurs de contrôle. Ces informations supplémentaires aident à gérer la connexion et à assurer l'intégrité des données.
+UDP : Les paquets UDP sont plus simples, ne contenant que les numéros de port source et de destination, des informations de longueur et une somme de contrôle pour la détection d'erreurs. Cette simplicité rend UDP plus rapide et plus efficace pour certains types d'applications.
+Contrôle de Flux :
+
+TCP : TCP comprend des mécanismes de contrôle de flux pour gérer le taux de transfert de données entre l'émetteur et le récepteur, empêchant la congestion et la surcharge du réseau.
+UDP : UDP n'a pas de contrôle de flux intégré, donc l'application utilisant UDP doit gérer le contrôle de flux si nécessaire.
+Ordonnancement :
+
+TCP : TCP garantit que les données sont reçues dans le même ordre qu'elles ont été envoyées, ce qui est important pour les applications où la séquence des données est importante.
+UDP : UDP ne garantit pas l'ordre de livraison des données. Si l'ordre est important, l'application doit le gérer.
