@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Wawax Surf" company="Wawax" webLink="" view-date="2024-02-12" view-index="0" gantt-divider-location="497" resource-divider-location="300" version="3.3.3300" locale="fr_FR">
+    <description><![CDATA[L’application Wawax Surf se fixe plusieurs objectifs clés pour répondre aux besoins des utilisateurs : 
+
+Permettre aux utilisateurs de créer des événements de surf personnalisés.
+Offrir la possibilité de spécifier le nombre de planches et de personnes que chaque participant peut embarquer.
+Faciliter le partage détaillé des sessions, incluant les conditions météorologiques et les prévisions grâce à une API dédiée au surf. 
+Permettre aux surfeurs de planifier leurs sorties en fonction des conditions les plus favorables.
+]]></description>
+    <view zooming-state="default:4" id="gantt-chart">
+        <field id="tpd3" name="Nom" width="274" order="0"/>
+        <field id="tpd4" name="Date de début" width="102" order="1"/>
+        <field id="tpd5" name="Date de fin" width="105" order="2"/>
+        <field id="tpd15" name="Notes" width="20" order="3"/>
+        <option id="taskLabelUp" value="name"/>
+        <option id="taskLabelDown" value="advancement"/>
+        <option id="taskLabelRight" value="length"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="filter.dueTodayTasks" value="false"/>
+        <option id="filter.overdueTasks" value="false"/>
+        <option id="filter.inProgressTodayTasks" value="false"/>
+        <timeline><![CDATA[1]]></timeline>
+        <option id="color.recent"><![CDATA[#3333ff #000066 #66ff99 #006666 #ffffcc #333300 #ccffcc #009999 #ff6666 #ff9999]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nom" width="210" order="0"/>
+        <field id="1" name="Rôle par défaut" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="0"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="1" uid="37fcbec6bc614c3fbdccd147f31e045e" name="Diagram et Shéma" color="#000000" shape="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0" meeting="false" project="true" start="2024-02-14" duration="15" complete="60" thirdDate="2024-02-14" thirdDate-constraint="0" expand="true">
+            <depend id="2" type="2" difference="0" hardness="Strong"/>
+            <depend id="3" type="2" difference="0" hardness="Strong"/>
+            <task id="8" uid="d0c9118bc74b4177a9be7be6f622d9c1" name="Use Case" color="#999999" meeting="false" start="2024-02-14" duration="3" complete="100" thirdDate="2024-02-13" thirdDate-constraint="0" expand="true"/>
+            <task id="9" uid="6600101d884b4e45b6f6edeafa1500bc" name="Séquence Diagram" color="#999999" meeting="false" start="2024-02-17" duration="3" complete="100" thirdDate="2024-02-13" thirdDate-constraint="0" expand="true"/>
+            <task id="10" uid="21bb3f0900454db8af4c466b44309f11" name="Activity Diagram" color="#999999" meeting="false" start="2024-02-21" duration="3" complete="100" thirdDate="2024-02-13" thirdDate-constraint="0" expand="true"/>
+            <task id="11" uid="f0b22fd59aa1441e970c52c09ae9d060" name="Class Diagram" color="#999999" meeting="false" start="2024-02-24" duration="3" complete="0" thirdDate="2024-02-13" thirdDate-constraint="0" expand="true"/>
+            <task id="12" uid="63fa13cbc01141ee82ef0b68c2bd5d56" name="Shéma de Base de Données (MCD / MLD / MPD)" color="#999999" meeting="false" start="2024-02-28" duration="3" complete="0" thirdDate="2024-02-13" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="2" uid="eb92f152978240098ced4e80a3a84630" name="Conception UI/UX" color="#006666" meeting="false" start="2024-03-02" duration="23" complete="0" thirdDate="2024-02-13" thirdDate-constraint="0" expand="true">
+            <task id="13" uid="247a92a0de3f4404b661958bb4c9b058" name="Wireframes pour les pages principales" color="#9999ff" meeting="false" start="2024-03-02" duration="5" complete="0" thirdDate="2024-02-13" thirdDate-constraint="0" expand="true"/>
+            <task id="14" uid="fa90bceffccd410ca55d58ab1af23f16" name="Design de la page de modification de profil utilisateur" color="#6699ff" meeting="false" start="2024-03-08" duration="4" complete="0" thirdDate="2024-02-13" thirdDate-constraint="0" expand="true"/>
+            <task id="15" uid="dae85168a18748e0ac2a0c09dd45e92d" name="Design de la page de login / register" color="#6699ff" meeting="false" start="2024-03-13" duration="4" complete="0" thirdDate="2024-02-13" thirdDate-constraint="0" expand="true"/>
+            <task id="16" uid="12f4d07b9f604ce6849e2146dfb9c3a7" name="Design de la page de création d''événements" color="#6699ff" meeting="false" start="2024-03-18" duration="4" complete="0" thirdDate="2024-02-13" thirdDate-constraint="0" expand="true"/>
+            <task id="17" uid="c07bf854b0454c74ab5b5d41aedba388" name="Design de la homepage" color="#3399ff" meeting="false" start="2024-03-22" duration="3" complete="0" thirdDate="2024-02-13" thirdDate-constraint="0" expand="true"/>
+            <task id="18" uid="8f48cd909b47422fa1a1e5390f5f75e8" name="Design futur événement (si inscrit)" color="#3399ff" meeting="false" start="2024-03-26" duration="3" complete="0" thirdDate="2024-02-13" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="3" uid="b4cf53603a1c4ffb95d709483ffa56c3" name="Dev Back End" color="#cc0033" meeting="false" start="2024-03-29" duration="60" complete="0" thirdDate="2024-02-13" thirdDate-constraint="0" expand="true">
+            <depend id="4" type="2" difference="0" hardness="Strong"/>
+            <task id="19" uid="994377e2cce24af09434f097f73cd55d" name="Configuration de l'infrastructure (Apache, MySQL)" color="#ff9999" meeting="false" start="2024-03-29" duration="5" complete="0" thirdDate="2024-02-13" thirdDate-constraint="0" expand="true"/>
+            <task id="20" uid="4c42a30c608e4c728f53aa5ce36226f8" name="Configuration du versioning (GitHub)" color="#ff6666" meeting="false" start="2024-04-04" duration="2" complete="0" thirdDate="2024-02-13" thirdDate-constraint="0" expand="true"/>
+            <task id="21" uid="6b1a42e05b744a0188281908d3710bd3" name="Création de la base de données et tables" color="#ff6666" meeting="false" start="2024-04-06" duration="7" complete="0" thirdDate="2024-02-13" thirdDate-constraint="0" expand="true"/>
+            <task id="22" uid="6fe5bd16e8ee453aa76026f93cc331af" name="Mise en place des classes et relations" color="#ff6666" meeting="false" start="2024-04-15" duration="5" complete="0" thirdDate="2024-02-13" thirdDate-constraint="0" expand="true"/>
+            <task id="23" uid="3ef5fd6fb0824173b8c22bd2dccdf2dc" name="Inscription et gestion des utilisateurs" color="#ff6666" meeting="false" start="2024-04-20" duration="6" complete="0" thirdDate="2024-02-13" thirdDate-constraint="0" expand="true"/>
+            <task id="24" uid="137d8606ff2646589b82c357118ff6f8" name="Authentification et gestion des utilisateurs" color="#ff6666" meeting="false" start="2024-04-27" duration="6" complete="0" thirdDate="2024-02-13" thirdDate-constraint="0" expand="true"/>
+            <task id="25" uid="bb997d7c26754981bf730cc0771e389c" name="Création et gestion des événements" color="#ff6666" meeting="false" start="2024-05-04" duration="7" complete="0" thirdDate="2024-02-13" thirdDate-constraint="0" expand="true"/>
+            <task id="27" uid="a6c768b23ff34b31980239951593229e" name="Recherche d'événements avec filtre avancés" color="#ff6666" meeting="false" start="2024-05-13" duration="6" complete="0" thirdDate="2024-02-13" thirdDate-constraint="0" expand="true"/>
+            <task id="28" uid="bfd2ecae4a8645fb81d2de8857bca23d" name="Espace commentaire et notation sur les profils" color="#ff6666" meeting="false" start="2024-05-20" duration="6" complete="0" thirdDate="2024-02-13" thirdDate-constraint="0" expand="true"/>
+            <task id="29" uid="aedab888bfc646f8be60be788d797aca" name="CRUD pour un super utilisateur" color="#ff6666" meeting="false" start="2024-05-27" duration="6" complete="0" thirdDate="2024-02-13" thirdDate-constraint="0" expand="true"/>
+            <task id="30" uid="678639b2e9e144a384e4ed838cc46a5a" name="Espace modération" color="#ff6666" meeting="false" start="2024-06-01" duration="5" complete="0" thirdDate="2024-02-13" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="4" uid="4a60535957af47bab57c2530545fbaca" name="API Surf" color="#009999" meeting="false" start="2024-06-07" duration="12" complete="0" thirdDate="2024-02-13" thirdDate-constraint="0" expand="true">
+            <depend id="5" type="2" difference="0" hardness="Strong"/>
+            <task id="32" uid="fde584805ed744fb88b161633b7730f2" name="Choix de l'API Surf" color="#ccffcc" meeting="false" start="2024-06-07" duration="2" complete="0" thirdDate="2024-02-13" thirdDate-constraint="0" expand="true"/>
+            <task id="33" uid="c8e7b0651c2142968ec17fdefc56a5c8" name="Compréhension de la documentation" color="#ccffcc" meeting="false" start="2024-06-10" duration="3" complete="0" thirdDate="2024-02-13" thirdDate-constraint="0" expand="true"/>
+            <task id="34" uid="b7a641f52626484e981f2aef77e116bd" name="Intégration de l'API dans le backend" color="#ccffcc" meeting="false" start="2024-06-13" duration="4" complete="0" thirdDate="2024-02-13" thirdDate-constraint="0" expand="true"/>
+            <task id="35" uid="b0559017aa594fd2a4f6bbff22db6e13" name="Tests et vérification de l'intégration" color="#ccffcc" meeting="false" start="2024-06-18" duration="3" complete="0" thirdDate="2024-02-13" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="5" uid="22eab68160b84492854a798826a01d04" name="Dev Front" color="#333300" meeting="false" start="2024-06-21" duration="29" complete="0" thirdDate="2024-02-13" thirdDate-constraint="0" expand="true">
+            <depend id="6" type="2" difference="0" hardness="Strong"/>
+            <task id="36" uid="8f27be155a974c88816a4cdbd61aaaef" name="Configuration de l'environnement (Vue.js)" color="#ffffcc" meeting="false" start="2024-06-21" duration="5" complete="0" thirdDate="2024-02-13" thirdDate-constraint="0" expand="true"/>
+            <task id="37" uid="d66d5294e6c54cb7ac4ee19ea63ee5f1" name="Création des composants UI" color="#ffffcc" meeting="false" start="2024-06-27" duration="8" complete="0" thirdDate="2024-02-13" thirdDate-constraint="0" expand="true"/>
+            <task id="38" uid="bee716017085451fa5a9c9beb13e77fd" name="Intégration frontend-backend" color="#ffffcc" meeting="false" start="2024-07-06" duration="6" complete="0" thirdDate="2024-02-13" thirdDate-constraint="0" expand="true">
+                <depend id="39" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="39" uid="1f35034e027043bd9ab9560633d83dc0" name="Test d'interface utilisateur et interaction" color="#ffffcc" meeting="false" start="2024-07-13" duration="5" complete="0" thirdDate="2024-02-13" thirdDate-constraint="0" expand="true">
+                <depend id="40" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="40" uid="471dc23ef8994c009d631a51427ea437" name="Optimisation de la performance et responsivité" color="#ffffcc" meeting="false" start="2024-07-19" duration="5" complete="0" thirdDate="2024-02-13" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="6" uid="cd54ffdc21e64b26a084ce888d3d83e8" name="Test Sécurité et performances" color="#006666" meeting="false" start="2024-07-25" duration="3" complete="0" thirdDate="2024-02-13" thirdDate-constraint="0" expand="true">
+            <depend id="7" type="2" difference="0" hardness="Strong"/>
+            <task id="41" uid="1afd36964bc34aea90a4f15607a1ba94" name="Tests de sécurité" color="#66ff99" meeting="false" start="2024-07-25" duration="3" complete="0" thirdDate="2024-02-13" thirdDate-constraint="0" expand="true"/>
+            <task id="42" uid="7b104019218a4093ae298b19233439af" name="Tests de performance" color="#66ff99" meeting="false" start="2024-07-25" duration="3" complete="0" thirdDate="2024-02-13" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="7" uid="1dc77bd35b10439bbc4de5146fb0a9a1" name="Correction de bugs" color="#000066" meeting="false" start="2024-07-29" duration="5" complete="0" thirdDate="2024-02-13" thirdDate-constraint="0" expand="false">
+            <task id="43" uid="3515f6b631ea4042b71225c8eb71f547" name="Identification et correction des bugs" color="#3333ff" meeting="false" start="2024-07-29" duration="5" complete="0" thirdDate="2024-02-13" thirdDate-constraint="0" expand="true"/>
+        </task>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
